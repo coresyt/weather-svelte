@@ -303,5 +303,5 @@ export interface ArchitectureInterior {
 }
 
 export interface UnsplashApiRes {
-  url: UnsplashApiResBase['results'][0]['urls']['full']
+  url: UnsplashApiResBase['results'][0]['urls']['regular']
 }

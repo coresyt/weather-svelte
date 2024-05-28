@@ -41,9 +41,9 @@ export const getUnplashApi = async ({ image }: { image: string }): Promise<Unspl
   
     const { response } = await unsplash.search.getPhotos({ query: image })
     if (typeof response !== 'object') throw new Error('reponse is null!')
-    const { full } = response.results[0].urls
+    const { regular } = response.results[0].urls
 
-    return { url: full }
+    return { url: regular }
   } catch (err) {
     console.log(err)
   }
