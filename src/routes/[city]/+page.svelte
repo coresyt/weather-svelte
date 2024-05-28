@@ -1,8 +1,11 @@
 <script lang='ts'>
-	import type { UnsplashApiRes, WeatherApiRes } from '../types'
+	import type { PageData } from './$types';
+	import type { UnsplashApiRes, WeatherApiRes } from '../../types'
 
+  export let data: PageData
+  
   const fetchingDataWeather = async () => {
-    const fetchData= await fetch('/api/weather?q=Mexico+City')
+    const fetchData= await fetch(`/api/weather?q=${data.city.replace('/', '')}`)
     const json: Promise<WeatherApiRes> = await fetchData.json()
     return json
   }
@@ -12,7 +15,6 @@
     const json: Promise<UnsplashApiRes> = await fetchData.json()
     return json
   }
-
 </script>
 
 {#await fetchingDataWeather()}
