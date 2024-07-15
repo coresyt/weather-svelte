@@ -1,13 +1,13 @@
 {
-  "name": "Weather App Svelte",
-  "short_name": "weatherapp",
-  "theme_color": "#020617",
-  "background_color": "#020617",
-  "display": "standalone",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
-  "icons": {
-    "128": "favicon.png"
-  }
+	"name": "Weather App Svelte",
+	"short_name": "weatherapp",
+	"theme_color": "#020617",
+	"background_color": "#020617",
+	"display": "standalone",
+	"orientation": "portrait",
+	"scope": "/",
+	"start_url": "/",
+	"icons": {
+		"128": "favicon.png"
+	}
 }
